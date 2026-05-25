@@ -1,20 +1,20 @@
 :root {
-  --bg: #e4eee3;
-  --bg-deep: #d0ddd0;
-  --panel: rgba(255, 255, 255, 0.93);
+  --bg: #d7e1d6;
+  --bg-deep: #b8c7b8;
+  --panel: rgba(250, 252, 249, 0.94);
   --panel-strong: #ffffff;
-  --panel-alt: #d5e4d6;
-  --text: #112016;
-  --muted: #41584b;
-  --line: rgba(17, 56, 35, 0.14);
-  --accent: #145437;
-  --accent-2: #1f744d;
-  --accent-3: #6ea884;
-  --flare: #b78b34;
-  --flare-soft: rgba(183, 139, 52, 0.14);
-  --green-soft: rgba(31, 116, 77, 0.14);
-  --shadow: 0 14px 30px rgba(12, 32, 20, 0.11);
-  --shadow-strong: 0 22px 48px rgba(12, 32, 20, 0.16);
+  --panel-alt: #c8d7c9;
+  --text: #0f1b13;
+  --muted: #3f5547;
+  --line: rgba(15, 56, 34, 0.16);
+  --accent: #0e4a30;
+  --accent-2: #1f6744;
+  --accent-3: #5f7f67;
+  --flare: #9a762a;
+  --flare-soft: rgba(154, 118, 42, 0.14);
+  --green-soft: rgba(20, 88, 54, 0.16);
+  --shadow: 0 14px 30px rgba(10, 29, 18, 0.12);
+  --shadow-strong: 0 24px 54px rgba(10, 29, 18, 0.18);
   --radius: 20px;
   --radius-sm: 14px;
   --max: 1140px;
@@ -26,10 +26,10 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top right, rgba(31, 116, 77, 0.22), transparent 30%),
-    radial-gradient(circle at top left, rgba(183, 139, 52, 0.08), transparent 18%),
-    radial-gradient(circle at 50% 0%, rgba(110, 168, 132, 0.12), transparent 24%),
-    linear-gradient(180deg, #f1f6f0 0%, var(--bg) 44%, var(--bg-deep) 100%);
+    radial-gradient(circle at top right, rgba(20, 88, 54, 0.26), transparent 28%),
+    radial-gradient(circle at top left, rgba(154, 118, 42, 0.10), transparent 16%),
+    radial-gradient(circle at 52% -8%, rgba(85, 124, 98, 0.20), transparent 24%),
+    linear-gradient(180deg, #ecf2ea 0%, var(--bg) 42%, var(--bg-deep) 100%);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.62;
 }
@@ -41,14 +41,14 @@ img { max-width: 100%; }
 .section { padding: 5rem 0; }
 .section-muted {
   background:
-    linear-gradient(180deg, rgba(214, 228, 215, 0.96) 0%, rgba(228, 238, 227, 0.88) 100%),
-    radial-gradient(circle at right center, rgba(31, 116, 77, 0.10), transparent 24%);
+    linear-gradient(180deg, rgba(198, 214, 199, 0.96) 0%, rgba(220, 230, 220, 0.90) 100%),
+    radial-gradient(circle at right center, rgba(20, 88, 54, 0.13), transparent 24%);
 }
 .section-highlight {
   background:
-    linear-gradient(180deg, rgba(211, 227, 214, 0.98) 0%, rgba(229, 237, 228, 0.97) 100%),
-    radial-gradient(circle at bottom right, rgba(183, 139, 52, 0.10), transparent 26%),
-    radial-gradient(circle at top left, rgba(31, 116, 77, 0.13), transparent 22%);
+    linear-gradient(180deg, rgba(191, 208, 193, 0.98) 0%, rgba(216, 227, 217, 0.97) 100%),
+    radial-gradient(circle at bottom right, rgba(154, 118, 42, 0.11), transparent 26%),
+    radial-gradient(circle at top left, rgba(20, 88, 54, 0.16), transparent 22%);
 }
 
 .site-header {
@@ -56,8 +56,8 @@ img { max-width: 100%; }
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: rgba(227, 236, 227, 0.88);
-  border-bottom: 1px solid rgba(18, 37, 27, 0.08);
+  background: rgba(205, 217, 206, 0.88);
+  border-bottom: 1px solid rgba(15, 37, 24, 0.10);
 }
 
 .nav-wrap {
@@ -78,7 +78,7 @@ img { max-width: 100%; }
   position: absolute;
   left: 0;
   bottom: -0.25rem;
-  width: 2.4rem;
+  width: 2.6rem;
   height: 4px;
   border-radius: 999px;
   background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--flare));
@@ -108,9 +108,9 @@ img { max-width: 100%; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 84% 8%, rgba(31, 116, 77, 0.18), transparent 24%),
-    radial-gradient(circle at 18% 0%, rgba(110, 168, 132, 0.11), transparent 18%),
-    linear-gradient(180deg, rgba(31, 116, 77, 0.04), transparent 40%);
+    radial-gradient(circle at 84% 8%, rgba(20, 88, 54, 0.24), transparent 24%),
+    radial-gradient(circle at 18% 0%, rgba(95, 127, 103, 0.15), transparent 18%),
+    linear-gradient(180deg, rgba(20, 88, 54, 0.06), transparent 40%);
   pointer-events: none;
 }
 
@@ -143,7 +143,7 @@ img { max-width: 100%; }
   height: 4px;
   margin-top: 0.85rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2), rgba(210, 165, 73, 0.9));
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), rgba(154, 118, 42, 0.92));
 }
 
 h1, h2, h3 {
@@ -188,23 +188,23 @@ h3 { font-size: 1.2rem; }
 }
 
 .button-primary {
-  background: linear-gradient(135deg, #145437 0%, #1f744d 58%, #b78b34 145%);
+  background: linear-gradient(135deg, #0e4a30 0%, #1f6744 58%, #9a762a 150%);
   color: white;
-  box-shadow: 0 16px 32px rgba(20, 84, 55, 0.24);
+  box-shadow: 0 18px 34px rgba(14, 74, 48, 0.28);
 }
 
 .button-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 22px 42px rgba(20, 84, 55, 0.28);
+  box-shadow: 0 24px 44px rgba(14, 74, 48, 0.32);
 }
 
 .button-secondary {
-  border-color: rgba(20, 84, 55, 0.18);
-  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(14, 74, 48, 0.22);
+  background: rgba(255, 255, 255, 0.84);
 }
 
 .button-secondary:hover {
-  border-color: rgba(20, 84, 55, 0.34);
+  border-color: rgba(14, 74, 48, 0.38);
   background: #fbfdfb;
 }
 
@@ -222,7 +222,7 @@ h3 { font-size: 1.2rem; }
 .contact-card,
 .feature-banner,
 .process-step {
-  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(243,248,243,0.93) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(236,243,236,0.95) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -255,9 +255,9 @@ h3 { font-size: 1.2rem; }
 .portrait-frame {
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: linear-gradient(180deg, #e5f0e7 0%, #cfe0d2 100%);
-  border: 1px solid rgba(20, 84, 55, 0.22);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.54), 0 14px 30px rgba(20, 38, 28, 0.10), 0 0 0 7px rgba(31, 116, 77, 0.09);
+  background: linear-gradient(180deg, #d7e4d8 0%, #b8cbb9 100%);
+  border: 1px solid rgba(14, 74, 48, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.50), 0 16px 34px rgba(15, 38, 24, 0.12), 0 0 0 8px rgba(20, 88, 54, 0.12);
 }
 
 .portrait-image {
@@ -275,8 +275,8 @@ h3 { font-size: 1.2rem; }
   margin-bottom: 0.6rem;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(210, 165, 73, 0.15) 0%, rgba(35, 147, 95, 0.11) 100%);
-  color: #6a5620;
+  background: linear-gradient(180deg, rgba(154, 118, 42, 0.15) 0%, rgba(31, 103, 68, 0.13) 100%);
+  color: #5f4b19;
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -312,9 +312,9 @@ h3 { font-size: 1.2rem; }
 
 .mini-stat {
   padding: 1rem;
-  background: linear-gradient(180deg, rgba(223, 240, 227, 0.98) 0%, rgba(255, 255, 255, 0.96) 100%);
+  background: linear-gradient(180deg, rgba(213, 227, 215, 0.98) 0%, rgba(255, 255, 255, 0.96) 100%);
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(15, 106, 67, 0.10);
+  border: 1px solid rgba(14, 74, 48, 0.12);
 }
 
 .mini-stat-label {
@@ -346,7 +346,7 @@ h3 { font-size: 1.2rem; }
 .offer-card {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(243,251,245,0.95) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(234,244,236,0.96) 100%);
 }
 
 .offer-card::after {
@@ -354,8 +354,8 @@ h3 { font-size: 1.2rem; }
   position: absolute;
   inset: auto 0 0 0;
   height: 5px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2), rgba(210, 165, 73, 0.72));
-  opacity: 0.95;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), rgba(154, 118, 42, 0.78));
+  opacity: 0.98;
 }
 
 .offer-top {
@@ -391,7 +391,7 @@ h3 { font-size: 1.2rem; }
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.04em;
-  box-shadow: 0 8px 16px rgba(15, 106, 67, 0.18);
+  box-shadow: 0 8px 16px rgba(14, 74, 48, 0.22);
 }
 
 .contact-wrap { display: grid; justify-items: center; }
@@ -407,7 +407,7 @@ h3 { font-size: 1.2rem; }
 .contact-card {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(241,250,244,0.95) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(236,247,239,0.95) 100%);
 }
 
 .contact-card::before {
@@ -415,7 +415,7 @@ h3 { font-size: 1.2rem; }
   position: absolute;
   inset: 0 0 auto 0;
   height: 6px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2), rgba(210, 165, 73, 0.92));
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), rgba(154, 118, 42, 0.94));
 }
 
 .site-footer {
@@ -442,9 +442,9 @@ h3 { font-size: 1.2rem; }
 .process-step:hover,
 .feature-banner:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(15, 106, 67, 0.14);
+  box-shadow: 0 22px 42px rgba(14, 74, 48, 0.16);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-  border-color: rgba(15, 106, 67, 0.20);
+  border-color: rgba(14, 74, 48, 0.24);
 }
 
 @media (max-width: 920px) {
@@ -469,6 +469,6 @@ h3 { font-size: 1.2rem; }
 }
 
 ::selection {
-  background: rgba(35, 147, 95, 0.24);
+  background: rgba(31, 103, 68, 0.26);
   color: var(--text);
 }
