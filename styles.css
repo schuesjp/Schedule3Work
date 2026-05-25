@@ -1,18 +1,18 @@
 :root {
-  --bg: #eef7ef;
-  --bg-deep: #dceedd;
+  --bg: #e4eee3;
+  --bg-deep: #d0ddd0;
   --panel: rgba(255, 255, 255, 0.93);
   --panel-strong: #ffffff;
-  --panel-alt: #dff0e3;
-  --text: #132018;
-  --muted: #456052;
-  --line: rgba(18, 67, 42, 0.12);
-  --accent: #0f6a43;
-  --accent-2: #23935f;
-  --accent-3: #7bcb98;
-  --flare: #d2a549;
-  --flare-soft: rgba(210, 165, 73, 0.14);
-  --green-soft: rgba(35, 147, 95, 0.14);
+  --panel-alt: #d5e4d6;
+  --text: #112016;
+  --muted: #41584b;
+  --line: rgba(17, 56, 35, 0.14);
+  --accent: #145437;
+  --accent-2: #1f744d;
+  --accent-3: #6ea884;
+  --flare: #b78b34;
+  --flare-soft: rgba(183, 139, 52, 0.14);
+  --green-soft: rgba(31, 116, 77, 0.14);
   --shadow: 0 14px 30px rgba(12, 32, 20, 0.11);
   --shadow-strong: 0 22px 48px rgba(12, 32, 20, 0.16);
   --radius: 20px;
@@ -26,10 +26,10 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top right, rgba(35, 147, 95, 0.24), transparent 31%),
-    radial-gradient(circle at top left, rgba(210, 165, 73, 0.08), transparent 18%),
-    radial-gradient(circle at 50% 0%, rgba(123, 203, 152, 0.14), transparent 26%),
-    linear-gradient(180deg, #f7fcf7 0%, var(--bg) 46%, var(--bg-deep) 100%);
+    radial-gradient(circle at top right, rgba(31, 116, 77, 0.22), transparent 30%),
+    radial-gradient(circle at top left, rgba(183, 139, 52, 0.08), transparent 18%),
+    radial-gradient(circle at 50% 0%, rgba(110, 168, 132, 0.12), transparent 24%),
+    linear-gradient(180deg, #f1f6f0 0%, var(--bg) 44%, var(--bg-deep) 100%);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.62;
 }
@@ -41,14 +41,14 @@ img { max-width: 100%; }
 .section { padding: 5rem 0; }
 .section-muted {
   background:
-    linear-gradient(180deg, rgba(223, 240, 227, 0.96) 0%, rgba(238, 247, 239, 0.86) 100%),
-    radial-gradient(circle at right center, rgba(35, 147, 95, 0.09), transparent 24%);
+    linear-gradient(180deg, rgba(214, 228, 215, 0.96) 0%, rgba(228, 238, 227, 0.88) 100%),
+    radial-gradient(circle at right center, rgba(31, 116, 77, 0.10), transparent 24%);
 }
 .section-highlight {
   background:
-    linear-gradient(180deg, rgba(220, 241, 226, 0.98) 0%, rgba(238, 247, 239, 0.97) 100%),
-    radial-gradient(circle at bottom right, rgba(210, 165, 73, 0.10), transparent 26%),
-    radial-gradient(circle at top left, rgba(35, 147, 95, 0.14), transparent 24%);
+    linear-gradient(180deg, rgba(211, 227, 214, 0.98) 0%, rgba(229, 237, 228, 0.97) 100%),
+    radial-gradient(circle at bottom right, rgba(183, 139, 52, 0.10), transparent 26%),
+    radial-gradient(circle at top left, rgba(31, 116, 77, 0.13), transparent 22%);
 }
 
 .site-header {
@@ -56,7 +56,7 @@ img { max-width: 100%; }
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: rgba(238, 247, 239, 0.84);
+  background: rgba(227, 236, 227, 0.88);
   border-bottom: 1px solid rgba(18, 37, 27, 0.08);
 }
 
@@ -108,9 +108,9 @@ img { max-width: 100%; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 84% 8%, rgba(35, 147, 95, 0.20), transparent 24%),
-    radial-gradient(circle at 18% 0%, rgba(123, 203, 152, 0.13), transparent 18%),
-    linear-gradient(180deg, rgba(35, 147, 95, 0.03), transparent 40%);
+    radial-gradient(circle at 84% 8%, rgba(31, 116, 77, 0.18), transparent 24%),
+    radial-gradient(circle at 18% 0%, rgba(110, 168, 132, 0.11), transparent 18%),
+    linear-gradient(180deg, rgba(31, 116, 77, 0.04), transparent 40%);
   pointer-events: none;
 }
 
@@ -188,23 +188,23 @@ h3 { font-size: 1.2rem; }
 }
 
 .button-primary {
-  background: linear-gradient(135deg, #0f6a43 0%, #23935f 60%, #d2a549 145%);
+  background: linear-gradient(135deg, #145437 0%, #1f744d 58%, #b78b34 145%);
   color: white;
-  box-shadow: 0 16px 32px rgba(15, 106, 67, 0.24);
+  box-shadow: 0 16px 32px rgba(20, 84, 55, 0.24);
 }
 
 .button-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 22px 42px rgba(15, 106, 67, 0.28);
+  box-shadow: 0 22px 42px rgba(20, 84, 55, 0.28);
 }
 
 .button-secondary {
-  border-color: rgba(15, 106, 67, 0.18);
+  border-color: rgba(20, 84, 55, 0.18);
   background: rgba(255, 255, 255, 0.8);
 }
 
 .button-secondary:hover {
-  border-color: rgba(15, 106, 67, 0.34);
+  border-color: rgba(20, 84, 55, 0.34);
   background: #fbfdfb;
 }
 
@@ -222,7 +222,7 @@ h3 { font-size: 1.2rem; }
 .contact-card,
 .feature-banner,
 .process-step {
-  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(248,253,249,0.93) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(243,248,243,0.93) 100%);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -255,9 +255,9 @@ h3 { font-size: 1.2rem; }
 .portrait-frame {
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: linear-gradient(180deg, #f0fbf3 0%, #d7ecdd 100%);
-  border: 1px solid rgba(15, 106, 67, 0.18);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.54), 0 14px 30px rgba(20, 38, 28, 0.10), 0 0 0 7px rgba(35, 147, 95, 0.08);
+  background: linear-gradient(180deg, #e5f0e7 0%, #cfe0d2 100%);
+  border: 1px solid rgba(20, 84, 55, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.54), 0 14px 30px rgba(20, 38, 28, 0.10), 0 0 0 7px rgba(31, 116, 77, 0.09);
 }
 
 .portrait-image {
